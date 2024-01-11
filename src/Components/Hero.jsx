@@ -1,83 +1,133 @@
 import React from "react";
-
 import { SocialIcon } from "react-social-icons";
-
+import { Link } from "react-scroll";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
-import { IoHandLeft } from "react-icons/io5";
 import "animate.css";
-import {Link as Scroll} from 'react-scroll';
-import { AiOutlineArrowDown } from "react-icons/ai";
-
-function Hero({theme}) {
-
-
+import { useDarkMode } from "../util/DarkModeContext";
+import Mark from "./assets/mark.jpg";
+function Hero() {
+  const { darkMode } = useDarkMode();
 
   return (
-    <div className={`w-full max-w-[1190px] m-auto lg:flex justify-between items-center py-4 lg:px-5 px-10    `}>
-      <div className="flex lg:flex-row flex-col-reverse justify-between items-center pt-[110px] gap-7  ">
-        <div className="w-50 py-10 ">
-          <div className="">
-            
-            <p className={`text-3xl font-semibold flex ${theme === "Dark-theme" ? 'text-white' : 'text-Secondary'}`}>
-              Hi!{" "}
-              <IoHandLeft
-                className="animate__animated animate__headShake  animate__infinite	mx-2 text-Tertiary"
-                size={28}
-              />
-            </p>
-            <h3 className={`text-5xl font-bold py-4 ${theme === "Dark-theme" ? 'text-white' : 'text-Secondary'}`}>
-              I am <span className={` ${theme === "Dark-theme" ? 'text-Tertiary' : 'text-Tertiary'}`}>Mark James Cariso</span>
-            </h3>
-          </div>
-          <div className="w-full max-w-[650px] py-5 text-base ">
-            <p className={`${theme === "Dark-theme" ? 'text-gray ' : 'text-Secondary'}`}>
+    <div className={darkMode ? " bg-[#111e25] text-white" : "bg-[#F5F5F5]"}>
+      <div
+        className={`w-full max-w-[1190px] m-auto   flex flex-col justify-center relative  h-full py-28  `}
+      >
+        <nav className="absolute left-0 lg:flex hidden">
+          <ul className="flex flex-col gap-20 font-montserrat font-normal items-center uppercase text-[12px] ">
+            <li className="rotate-90 transform hover:rotate-0 transition-all cursor-pointer   ">
+              <Link
+                to="home"
+                offset={-7000}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="hover:border-b-2 pb-2 border-[#FF6F6F] transition-all"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="rotate-90 transform hover:rotate-0 transition-all cursor-pointer  ">
+              <Link
+                to="about"
+                offset={-100}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="hover:border-b-2 pb-2 border-[#FF6F6F] transition-all"
+              >
+                About
+              </Link>
+            </li>
+            <li className="rotate-90 transform  hover:rotate-0 transition-all cursor-pointer ">
+              <Link
+                to="project"
+                offset={-100}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="hover:border-b-2 pb-2 border-[#FF6F6F] transition-all"
+              >
+                Project
+              </Link>
+            </li>
+            <li className="rotate-90 transform hover:rotate-0 transition-all cursor-pointer ">
+              <Link
+                to="testimonial"
+                offset={-100}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="hover:border-b-2 pb-2 border-[#FF6F6F] transition-all"
+              >
+                Testimonial
+              </Link>
+            </li>
+            <li className="rotate-90 transform  hover:rotate-0 transition-all cursor-pointer ">
+              <Link
+                to="contact"
+                offset={-100}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="hover:border-b-2 pb-2 border-[#FF6F6F] transition-all"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="lg:flex justify-evenly items-center py-4       ">
+          <div className="  w-full py-5    px-10  lg:ml-24">
+            <h1 className="text-3xl text-[#303481] font-playfair  pb-4">
+              <span className="italic"> Hello, </span>{" "}
+              <span className="font-bold">I'm Mark</span>
+            </h1>
+            <p className="text-md font-normal font-montserrat">
               Are you looking for a web front end developer for your next
-              project? Do you want to build something incredible? Then I am the
-              right Web Developer for you. I have a strong understanding of web
-              development technologies and a passion for creating beautiful and
-              functional websites. I am confident that I can help bring your
-              vision to life, and I look forward to the opportunity to work with
-              you. Thank you for considering me for your project
+              project? Do you want to build something incredible? I am confident
+              that I can help bring your vision to life, and I look forward to
+              the opportunity to work with you. Thank you for considering me for
+              your project
             </p>
-          </div>
-          <button className=" px-7 py-4 bg-Tertiary text-Primary hover:scale-110 transition ">
-
-          <Scroll
-            to="project"
-            offset={-100}
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="flex justify-center items-center "
-          >
-           Explore Project<AiOutlineArrowDown size={20} className="ml-1  " />
-          </Scroll>
-          
-          </button>
-        </div>
-        <div className=" flex md:flex-row  flex-col justify-between items-center gap-6">
-          <div className="circle lg:w-[400px] w-full ">
-            <div className=" text-4xl text-right font-bold ">
-              <h4 className={`  italic ${theme ? 'text-white' : 'text-Chone'}`}>CHONE DIP</h4>
+            <div className="py-4"></div>
+            <div
+              className={`p-4 rounded-lg ${
+                darkMode ? "bg-[#29333b]  " : "bg-[#e8e8e8]"
+              }`}
+            >
+              <div>
+                <h1 className="font-playfair uppercase text-sm font-medium">
+                  {" "}
+                  What am I currently engaged in? / January 16 2024
+                </h1>
+                <p
+                  className={`italic font-montserrat text-sm font-light ${
+                    darkMode ? "  " : ""
+                  }`}
+                >
+                  ~ Thinking about you ❤︎
+                </p>
+              </div>
             </div>
+          </div>
+          <div className="  w-full  flex justify-center items-center">
             <img
-              src="https://images.unsplash.com/photo-1493119508027-2b584f234d6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
-              alt="programming"
+              src={Mark}
+              alt="photoss"
+              className="  image-shape w-[300px] border-2 border-[#FF6F6F]"
+              id="mark"
             />
-            <div className="text-4xl font-bold">
-              <h4 className={` italic ${theme ? 'text-white' : 'text-Chone'}`}>DATA MIN</h4>
-            </div>
           </div>
-          <div className="flex md:flex-col items-center justify-center gap-2">
+          <div className=" flex lg:flex-col items-center lg:pt-0 pt-7 justify-center gap-2">
             <div id="facebook">
               <SocialIcon
                 url="https://www.facebook.com/mjcariso03"
                 network="facebook"
-                bgColor={theme ? "#B10F2E" : "#B10F2E"}
-                fgColor={theme ? "#ffff" : "#ffff"}
+                bgColor="#FF6F6F"
+                fgColor="#ffff"
                 style={{ height: 35, width: 35 }}
-               
               />
             </div>
             <Tooltip
@@ -89,8 +139,8 @@ function Hero({theme}) {
               <SocialIcon
                 url="https://github.com/emjay03"
                 network="github"
-                bgColor={theme ? "#B10F2E" : "#B10F2E"}
-                fgColor={theme ? "#ffff" : "#ffff"}
+                bgColor="#FF6F6F"
+                fgColor="#ffff"
                 style={{ height: 35, width: 35 }}
               />
             </div>
@@ -104,8 +154,8 @@ function Hero({theme}) {
               <SocialIcon
                 url="https://twitter.com/"
                 network="twitter"
-                bgColor={theme ? "#B10F2E" : "#B10F2E"}
-                fgColor={theme ? "#ffff" : "#ffff"}
+                bgColor="#FF6F6F"
+                fgColor="#ffff"
                 style={{ height: 35, width: 35 }}
               />
             </div>
@@ -118,8 +168,8 @@ function Hero({theme}) {
               <SocialIcon
                 url="https://www.tiktok.com/@emj4yit?lang=en"
                 network="tiktok"
-                bgColor={theme ? "#B10F2E" : "#B10F2E"}
-                fgColor={theme ? "#ffff" : "#ffff"}
+                bgColor="#FF6F6F"
+                fgColor="#ffff"
                 style={{ height: 35, width: 35 }}
               />
             </div>
@@ -132,8 +182,8 @@ function Hero({theme}) {
               <SocialIcon
                 url="https://www.linkedin.com/in/mj-cariso-81b659214/"
                 network="linkedin"
-                bgColor={theme ? "#B10F2E" : "#B10F2E"}
-                fgColor={theme ? "#ffff" : "#ffff"}
+                bgColor="#FF6F6F"
+                fgColor="#ffff"
                 style={{ height: 35, width: 35 }}
               />
             </div>
@@ -145,7 +195,6 @@ function Hero({theme}) {
           </div>
         </div>
       </div>
-      <div></div>
     </div>
   );
 }
