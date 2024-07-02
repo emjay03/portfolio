@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.69ad6002.css",
-    "main.js": "/Portfolio/static/js/main.d0fbeec3.js",
+    "main.css": "/Portfolio/static/css/main.88002266.css",
+    "main.js": "/Portfolio/static/js/main.41462bb8.js",
     "static/media/project8.png": "/Portfolio/static/media/project8.844f4791fdd69c8e2b30.png",
     "static/media/other3.png": "/Portfolio/static/media/other3.c5448ef903bb9a552f52.png",
     "static/media/other2.png": "/Portfolio/static/media/other2.58bd056b3d68d79ab7a6.png",
-    "static/media/project4.jpg": "/Portfolio/static/media/project4.02e26ef10c6633462c91.jpg",
     "static/media/other4.png": "/Portfolio/static/media/other4.2f5eaac1eb7e2c56b252.png",
     "static/media/project3.png": "/Portfolio/static/media/project3.2edcea855a89aacd3ba6.png",
     "static/media/other5.png": "/Portfolio/static/media/other5.f3898e6a8e7448e849f3.png",
     "static/media/mj.jpg": "/Portfolio/static/media/mj.6ed47e6816aedf3653ca.jpg",
+    "static/media/project4.png": "/Portfolio/static/media/project4.ee58c3cd58ac624103db.png",
     "static/media/project1.png": "/Portfolio/static/media/project1.93bea77a2f88331913b7.png",
     "static/media/project6.png": "/Portfolio/static/media/project6.72ae8cd9cf376533fc0a.png",
     "static/media/project7.png": "/Portfolio/static/media/project7.fd7c727312913d94e86c.png",
     "static/media/other1.png": "/Portfolio/static/media/other1.c5f9ae436343d968dc83.png",
     "static/media/mark.jpg": "/Portfolio/static/media/mark.05fb0ba87e6356228b48.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.69ad6002.css.map": "/Portfolio/static/css/main.69ad6002.css.map",
-    "main.d0fbeec3.js.map": "/Portfolio/static/js/main.d0fbeec3.js.map"
+    "main.88002266.css.map": "/Portfolio/static/css/main.88002266.css.map",
+    "main.41462bb8.js.map": "/Portfolio/static/js/main.41462bb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.69ad6002.css",
-    "static/js/main.d0fbeec3.js"
+    "static/css/main.88002266.css",
+    "static/js/main.41462bb8.js"
   ]
 }
