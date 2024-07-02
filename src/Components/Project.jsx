@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import project1 from "./assets/project/project1.png";
 import project3 from "./assets/project/project3.png";
-import project4 from "./assets/project/project4.jpg";
+import project4 from "./assets/project/project4.png";
 import project6 from "./assets/project/project6.png";
 import project7 from "./assets/project/project7.png";
 import project8 from "./assets/project/project8.png";
@@ -99,8 +99,8 @@ function Project() {
                   className={`text-3xl font-semibold font-playfair ${
                     darkMode ? "text-white" : "text-dark"
                   }`}
-                >
-                  QR-Integrated User Data Retrieval System
+                ><a href="https://bcardte.netlify.app/cardholder/65913fca74c1bebd770019fc">QR-Integrated User Data Retrieval System</a>
+                 
                 </h2>
                 <div className=" py-6 text-base font-montserrat  ">
                   <p className={`${darkMode ? "text-white" : "text-dark"}`}>
@@ -160,15 +160,13 @@ function Project() {
                 </h2>
                 <div className=" py-6 text-base font-montserrat  ">
                   <p className={`${darkMode ? "text-white" : "text-dark"}`}>
-                    This is my{" "}
-                    <span className="border-b-2 pb-[1px] border-[#FF6F6F] italic">
-                      first project when I was in my first year
-                    </span>
-                    . MCinema is a website that offers a variety of films,
-                    including a title filter, search function, high-quality
-                    options, and a membership login for saving favorite films
-                    and accessing exclusive content. It also provides a movie
-                    rental service for a fee.
+                  
+                   
+                    Task monitoring system is a tool or platform designed 
+                    to   <span className="border-b-2 pb-[1px] border-[#FF6F6F] italic">
+                   track and manage
+                    </span>  the progress of tasks within a project 
+                    or organization
                   </p>
                 </div>
                 <div className="grid md:grid-cols-4 grid-cols-3 gap-4 ">
@@ -213,21 +211,19 @@ function Project() {
                       className={`text-3xl font-semibold font-playfair ${
                         darkMode ? "text-white" : "text-dark"
                       }`}
-                    >
-                      BARANGAY RMS
+                    ><a href="https://jamconnect.online/">JamConnect Web And Mobile</a>
+                      
                     </h2>
                     <div className=" py-6 text-base  font-montserrat">
                       <p className={`${darkMode ? "text-white" : "text-dark"}`}>
-                        A barangay record system is a computer program that
-                        <span className="border-b-2 pb-[1px] border-[#FF6F6F] italic">
+                       Job Order and Operation Support
+Monitoring System
+                         
+                       is to develop a system for <span className="border-b-2 pb-[1px] border-[#FF6F6F] italic">
                           {" "}
-                          manages and stores information
-                        </span>{" "}
-                        for a specific barangay, including general information,
-                        announcements, frequently asked questions, Covid-19
-                        cases tracking, contact information for officials,
-                        information about the developer and the barangay, and a
-                        login page for additional services.
+                        monitoring 
+                        </span>{" "} the job order of the
+technicians
                       </p>
                     </div>
                     <div className="grid md:grid-cols-4 grid-cols-2 gap-4 ">
@@ -236,28 +232,35 @@ function Project() {
                           darkMode ? "bg-[#29333b]  text-white" : "bg-[#e8e8e8]"
                         }`}
                       >
-                        C#{" "}
+                        React{" "}
                       </span>
                       <span
                         className={`py-2 text-center font-montserrat text-sm uppercase font-semibold ${
                           darkMode ? "bg-[#29333b]  text-white" : "bg-[#e8e8e8]"
                         }`}
                       >
-                        MySQL
+                        PostgresSql
                       </span>
                       <span
                         className={`py-2 text-center font-montserrat text-sm uppercase font-semibold ${
                           darkMode ? "bg-[#29333b]  text-white" : "bg-[#e8e8e8]"
                         }`}
                       >
-                        Js
+                        Docker
                       </span>
                       <span
                         className={`py-2 text-center font-montserrat text-sm uppercase font-semibold ${
                           darkMode ? "bg-[#29333b]  text-white" : "bg-[#e8e8e8]"
                         }`}
                       >
-                        Bootstrap
+                        Tailwind
+                      </span>
+                       <span
+                        className={`py-2 text-center font-montserrat text-sm uppercase font-semibold ${
+                          darkMode ? "bg-[#29333b]  text-white" : "bg-[#e8e8e8]"
+                        }`}
+                      >
+                        Laravel
                       </span>
                     </div>
                   </div>
@@ -376,18 +379,18 @@ function Project() {
                         darkMode ? "text-white" : "text-dark"
                       }`}
                     >
-                      Physical plant and facilities system{" "}
+                      <a href="https://github.com/emjay03/PHYSICAL-PLANT-AND-FACILITIES-SYSTEM">Physical plant and facilities system</a>{" "}
                     </h2>
                     <div className=" py-6 text-base font-montserrat  ">
                       <p className={`${darkMode ? "text-white" : "text-dark"}`}>
                         I work on the Physical Plant and Facilities System
                         project, where I implemented the creation of user
                         <span className="border-b-2 pb-[1px] border-[#FF6F6F] italic">
-                          roles per department
+                          roles per department.
                         </span>{" "}
-                        and{" "}
+                        {" "}
                         <span className="border-b-2 pb-[1px] border-[#FF6F6F] italic">
-                          established authentication role login
+                          established authentication role login and inventory of the items 
                         </span>
                       </p>
                     </div>

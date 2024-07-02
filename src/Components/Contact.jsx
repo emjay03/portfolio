@@ -62,7 +62,7 @@ function Contact() {
                   darkMode ? "text-white" : "text-black-mode"
                 }`}
               >
-                (63+)9751250231
+                (63+)9816712814
               </p>
             </span>
             <div className="py-2"></div>
@@ -78,7 +78,7 @@ function Contact() {
                   darkMode ? "text-white" : "text-black-mode"
                 }`}
               >
-                mjcariso3@gmail.com
+                carisomarkjames22@gmail.com
               </p>
             </span>
           </div>

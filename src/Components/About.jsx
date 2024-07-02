@@ -2,9 +2,11 @@ import React from "react";
 import mj from "./assets/mj.jpg";
 import { useDarkMode } from "../util/DarkModeContext";
 import { IoLogoNodejs } from "react-icons/io";
-import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
+import { MdHtml } from "react-icons/md";
 import { SiTailwindcss, SiMongodb, SiExpress } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
+import { MdCss } from "react-icons/md";
+import { DiBootstrap } from "react-icons/di";
 import {
   FaReact,
   FaJava,
@@ -12,15 +14,15 @@ import {
   FaFigma,
   FaPhp,
 } from "react-icons/fa";
-import { AiOutlineHtml5 } from "react-icons/ai";
 import { SiMysql } from "react-icons/si";
 import { DiCodeigniter } from "react-icons/di";
 import { IoMdDownload } from "react-icons/io";
-
+import { PiGitMergeDuotone } from "react-icons/pi";
+import { DiJavascript1 } from "react-icons/di";
 function About() {
   const { darkMode } = useDarkMode();
   const downloadFile = () => {
-    const fileDriveId = "1jp5MdcWGR1VvFmD3T1Dn_eWabt4Qoh4Z";
+    const fileDriveId = "13EbcVGPZvB1fy2wfy5fGg6950yfFHh9E";
     const downloadLink = `https://drive.google.com/uc?export=download&id=${fileDriveId}`;
     const link = document.createElement("a");
     link.href = downloadLink;
@@ -57,7 +59,7 @@ function About() {
                 darkMode ? "text-white" : "text-Black-mode"
               } `}
             >
-              As a highly motivated and dedicated student of{" "}
+              As a highly motivated fresh graduate student of{" "}
               <span className="italic font-playfair  border-b-2 border-[#FF6F6F]">
                 information technology,
               </span>{" "}
@@ -68,7 +70,7 @@ function About() {
               field. I am a fast learner, a hard worker and{" "}
               <span className="italic font-playfair  border-b-2 border-[#FF6F6F]">
                 I am eager to take on any task or challenge
-              </span>
+              </span>{" "}
               that comes my way. I am certain that my skills, experience, and
               attitude make me a perfect fit for any company and I am excited to
               take my career to the next level .
@@ -107,7 +109,7 @@ function About() {
                   darkMode ? "bg-[#29333b] text-white " : ""
                 }`}
               >
-                <AiOutlineHtml5 size={30} />
+                <MdHtml size={30} />
               </div>
 
               <div
@@ -115,14 +117,14 @@ function About() {
                   darkMode ? "bg-[#29333b] text-white " : ""
                 }`}
               >
-                <IoLogoCss3 size={30} />
+                <MdCss size={30} />
               </div>
               <div
                 className={`flex items-center justify-center py-4 rounded-lg shadow-md ${
                   darkMode ? "bg-[#29333b] text-white " : ""
                 }`}
               >
-                <IoLogoJavascript size={30} />
+                <DiJavascript1 size={30} />
               </div>
               <div
                 className={`flex items-center justify-center py-4 rounded-lg shadow-md ${
@@ -136,7 +138,7 @@ function About() {
                   darkMode ? "bg-[#29333b] text-white " : ""
                 }`}
               >
-                <BsBootstrap size={30} />
+                <DiBootstrap  size={30} />
               </div>
               <div
                 className={`flex items-center justify-center py-4 rounded-lg shadow-md ${
@@ -207,6 +209,13 @@ function About() {
                 }`}
               >
                 <DiCodeigniter size={30} />
+              </div>
+              <div
+                className={`flex items-center justify-center py-4 rounded-lg shadow-md ${
+                  darkMode ? "bg-[#29333b] text-white " : ""
+                }`}
+              >
+                <PiGitMergeDuotone  size={30} />
               </div>
             </div>
           </div>
